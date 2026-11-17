@@ -1,0 +1,223 @@
+{
+ "flow": {
+  "age_18_35": 1542,
+  "excluded_diagnosed_diabetes": 27,
+  "analytic": 1416
+ },
+ "prevalence": {
+  "n": 1416,
+  "dysglycemia": 0.1193502824858757,
+  "prediabetes": 0.11087570621468927,
+  "undiagnosed_diabetes": 0.00847457627118644,
+  "aware_among_dysglycemia": 0.1242603550295858,
+  "n_dysglycemia": 169
+ },
+ "prevalence_by_bmi": {
+  "<25": 0.05534351145038168,
+  "25-29.9": 0.11484593837535013,
+  ">=30": 0.18992248062015504
+ },
+ "ada_test": {
+  "n": 1397,
+  "auc": 0.6921301677709326,
+  "auc_ci": [
+   0.651294129982619,
+   0.7324353424367981
+  ],
+  "at_threshold_5": {
+   "sensitivity": 0.10714285714285714,
+   "specificity": 0.9788445890968267,
+   "positive_rate": 0.031496062992125984
+  }
+ },
+ "uspstf_2021": {
+  "sensitivity": 0.09467455621301775,
+  "specificity": 0.9639133921411387,
+  "positive_rate": 0.04307909604519774
+ },
+ "routine_logistic": {
+  "auc": 0.7617572113901767,
+  "auc_ci": [
+   0.7267747352686934,
+   0.7970877990983906
+  ],
+  "at_same_positive_rate_as_ada": {
+   "sensitivity": 0.09467455621301775,
+   "specificity": 0.9767441860465116,
+   "positive_rate": 0.03177966101694915
+  }
+ },
+ "routine_boosting": {
+  "auc": 0.7165742159881942,
+  "auc_ci": [
+   0.6773502350550499,
+   0.7553231575150158
+  ],
+  "at_same_positive_rate_as_ada": {
+   "sensitivity": 0.07100591715976332,
+   "specificity": 0.9735364875701684,
+   "positive_rate": 0.03177966101694915
+  }
+ },
+ "auc_difference_logistic_minus_ada": {
+  "mean": 0.06534329702933735,
+  "ci": [
+   0.027571109852978528,
+   0.10149682411137606
+  ]
+ },
+ "logistic_standardized_coefficients": {
+  "race_Non-HispanicBlack": 0.6310744522647196,
+  "DirectHdlcholesterolMgdl": -0.43921206673179397,
+  "AgeInYearsAtScreening": 0.3868950193623267,
+  "race_Non-HispanicAsian": 0.3861155539526076,
+  "BodyMassIndexKgm2": 0.3159369010619616,
+  "race_MexicanAmerican": 0.230097818576672,
+  "sbp": 0.15746569669659824,
+  "fam_hx": 0.15355151483492213,
+  "WaistCircumferenceCm": 0.09756387667166483,
+  "race_OtherHispanic": -0.09313765209737838,
+  "race_OtherMulti-Racial": 0.08818216291244278,
+  "nonhdl": 0.08791486432464589,
+  "active": -0.07289974661925039,
+  "male": 0.042084480093987776,
+  "dbp": -0.013284409584745999
+ },
+ "routine_logistic_race_free": {
+  "auc": 0.715677389047323,
+  "auc_ci": [
+   0.6781031632892741,
+   0.7537554404457744
+  ]
+ },
+ "ada_by_threshold": [
+  {
+   "threshold": 1,
+   "sensitivity": 0.9583333333333334,
+   "specificity": 0.1521562245728234,
+   "positive_rate": 0.8611309949892627
+  },
+  {
+   "threshold": 2,
+   "sensitivity": 0.8571428571428571,
+   "specificity": 0.42066720911310007,
+   "positive_rate": 0.6127415891195419
+  },
+  {
+   "threshold": 3,
+   "sensitivity": 0.6011904761904762,
+   "specificity": 0.6737184703010577,
+   "positive_rate": 0.3593414459556192
+  },
+  {
+   "threshold": 4,
+   "sensitivity": 0.30357142857142855,
+   "specificity": 0.8803905614320586,
+   "positive_rate": 0.14173228346456693
+  },
+  {
+   "threshold": 5,
+   "sensitivity": 0.10714285714285714,
+   "specificity": 0.9788445890968267,
+   "positive_rate": 0.031496062992125984
+  }
+ ],
+ "matched_sensitivity": [
+  {
+   "target_sensitivity": 0.5,
+   "routine_logistic": {
+    "sensitivity": 0.5029585798816568,
+    "specificity": 0.8452285485164395,
+    "positive_rate": 0.1963276836158192
+   },
+   "routine_race_free": {
+    "sensitivity": 0.5029585798816568,
+    "specificity": 0.7794707297514034,
+    "positive_rate": 0.2542372881355932
+   },
+   "ada_best_threshold_reaching_target": {
+    "threshold": 3,
+    "sensitivity": 0.6011904761904762,
+    "specificity": 0.6737184703010577,
+    "positive_rate": 0.3593414459556192
+   }
+  },
+  {
+   "target_sensitivity": 0.7,
+   "routine_logistic": {
+    "sensitivity": 0.6982248520710059,
+    "specificity": 0.698476343223737,
+    "positive_rate": 0.3488700564971751
+   },
+   "routine_race_free": {
+    "sensitivity": 0.6982248520710059,
+    "specificity": 0.6006415396952687,
+    "positive_rate": 0.4350282485875706
+   },
+   "ada_best_threshold_reaching_target": {
+    "threshold": 2,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.42066720911310007,
+    "positive_rate": 0.6127415891195419
+   }
+  },
+  {
+   "target_sensitivity": 0.8,
+   "routine_logistic": {
+    "sensitivity": 0.7988165680473372,
+    "specificity": 0.5733761026463513,
+    "positive_rate": 0.471045197740113
+   },
+   "routine_race_free": {
+    "sensitivity": 0.7988165680473372,
+    "specificity": 0.5052125100240578,
+    "positive_rate": 0.5310734463276836
+   },
+   "ada_best_threshold_reaching_target": {
+    "threshold": 2,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.42066720911310007,
+    "positive_rate": 0.6127415891195419
+   }
+  }
+ ],
+ "race_free_auc_by_group": {
+  "Mexican American": {
+   "n": 236,
+   "cases": 28,
+   "auc_race_free": 0.756353021978022
+  },
+  "Non-Hispanic Asian": {
+   "n": 205,
+   "cases": 30,
+   "auc_race_free": 0.7801904761904761
+  },
+  "Non-Hispanic Black": {
+   "n": 304,
+   "cases": 63,
+   "auc_race_free": 0.6748995587169861
+  },
+  "Non-Hispanic White": {
+   "n": 448,
+   "cases": 32,
+   "auc_race_free": 0.7660757211538461
+  },
+  "Other Race - Including Multi-Racial": {
+   "n": 94,
+   "cases": 10,
+   "auc_race_free": 0.7285714285714286
+  }
+ },
+ "race_free_auc_by_sex": {
+  "Female": {
+   "n": 731,
+   "cases": 76,
+   "auc_race_free": 0.7432302129369224
+  },
+  "Male": {
+   "n": 685,
+   "cases": 93,
+   "auc_race_free": 0.6847028480092998
+  }
+ }
+}

@@ -1,0 +1,9 @@
+{"cycle":"NHANES August 2021-August 2023 (L files)","model":"frozen race-free PreventScreen (developed on 2017-2018); no refitting",
+"flow":{"age_18_35_examined_with_MEC_weight":1493,"excluded_known_diabetes":38,"no_HbA1c":126,"analytic":1329,"cases_HbA1c_ge_5.7":122},
+"note_family_history":"MCQ300C (family history of diabetes) is not released in the 2021-2023 cycle; set to the development median (0) for all, which handicaps both the model and the ADA test",
+"pop_millions":70.71,"prev":[0.0915,0.0632,0.1198],"cases_millions":6.47,"prediabetes_range":[0.0878,0.0593,0.1163],"undiagnosed_diabetes_range":[0.0037,0.0018,0.0056],
+"aware_among_cases":[0.1499,0.0783,0.2216],"sens_uspstf":[0.073,0.0215,0.1244],"sens_ada5":[0.0497,-0.0018,0.1011],
+"model_at_dev_threshold":{"sens":[0.586,0.4651,0.7069],"flag_rate":[0.4072,0.3495,0.4649]},
+"auc_unweighted":{"model":0.6858,"model_ci_psu_bootstrap":[0.6429,0.7268],"ada":0.6544},"auc_weighted":{"model":0.6551,"ada":0.6295,"diff":0.0218,"diff_ci":[-0.0044,0.0446]},
+"calibration":{"slope":0.882,"slope_ci":[0.6307,1.1333],"citl":-0.164,"mean_pred":0.1055,"observed":0.0918,"brier":0.0804},
+"matched_flag_rate":[{"ada_cut":1,"flag":0.824,"ada":0.921,"model":0.918},{"ada_cut":2,"flag":0.538,"ada":0.714,"model":0.716},{"ada_cut":3,"flag":0.248,"ada":0.400,"model":0.449},{"ada_cut":4,"flag":0.064,"ada":0.128,"model":0.152},{"ada_cut":5,"flag":0.013,"ada":0.050,"model":0.060}]}
